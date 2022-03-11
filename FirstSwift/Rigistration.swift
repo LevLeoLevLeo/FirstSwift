@@ -23,15 +23,18 @@ class Rigistration: UIViewController {
     }
     
     @IBAction func TxbActRepeatPassword(_ sender: UITextField) {
-        if (TxbRepeatPassword.text != TxbNewPassword.text)
+        if (TxbRepeatPassword.text == TxbNewPassword.text || TxbRepeatPassword.text?.isEmpty == true)
         {
-            LblRepeatPassword.isHidden = false
+            LblRepeatPassword.isHidden = true
         }
         else {
-            LblRepeatPassword.isHidden = true
+            LblRepeatPassword.isHidden = false
         }
     }
     
+    @IBAction func BtnActnAuth(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     

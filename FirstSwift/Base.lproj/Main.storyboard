@@ -25,13 +25,13 @@
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <textField toolTip="Введите ваш логин" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите логин..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-fp-uXz">
-                                <rect key="frame" x="20" y="383" width="260" height="34"/>
+                                <rect key="frame" x="64" y="380" width="287" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField toolTip="Введите ваш пароль" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-oo-PIb">
-                                <rect key="frame" x="20" y="425" width="260" height="34"/>
+                                <rect key="frame" x="64" y="422" width="241" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -43,27 +43,11 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Регистрация"/>
                                 <connections>
-                                    <action selector="BtnClickRegistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w30-fk-9CZ"/>
-                                    <segue destination="Q23-W6-3Y7" kind="show" id="ziz-Ld-uR0"/>
+                                    <segue destination="Q23-W6-3Y7" kind="presentation" modalPresentationStyle="fullScreen" id="ziz-Ld-uR0"/>
                                 </connections>
                             </button>
-                            <switch toolTip="Переключите, чтобы показать пароль." opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dMp-3C-Hjc">
-                                <rect key="frame" x="288" y="427" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="SwtPassword:" destination="BYZ-38-t0r" eventType="valueChanged" id="RWK-Em-GcJ"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пароль скрыт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjK-JQ-xax">
-                                <rect key="frame" x="340" y="432" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="10"/>
-                                <color key="textColor" red="1" green="0.96862745100000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button toolTip="Войти в аккаунт" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynW-4Q-QoJ">
-                                <rect key="frame" x="102" y="467" width="97" height="47"/>
+                                <rect key="frame" x="159" y="469" width="97" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
@@ -73,20 +57,39 @@
                                     <action selector="BtnClickAuthorization:" destination="BYZ-38-t0r" eventType="touchUpInside" id="10D-ln-2NG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-gx-Dzr">
+                                <rect key="frame" x="287" y="422" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="eye" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="kPs-Mj-ppO"/>
                     <connections>
-                        <outlet property="BtnPageRegistration" destination="EYl-Jr-U73" id="HYB-zQ-IVi"/>
-                        <outlet property="SwtchShowPass" destination="dMp-3C-Hjc" id="YYm-rL-TM8"/>
+                        <outlet property="BtnShowPass" destination="Nwu-gx-Dzr" id="17z-sG-dIu"/>
                         <outlet property="TxbAuthLogin" destination="aqd-fp-uXz" id="bX8-uA-hXg"/>
                         <outlet property="TxbAuthPassword" destination="VeX-oo-PIb" id="PPA-RQ-bWe"/>
-                        <outlet property="TxbShowPassword" destination="cjK-JQ-xax" id="P5D-07-naE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kY7-zE-SbJ">
+                    <connections>
+                        <action selector="ImgActnHiddPass:" destination="BYZ-38-t0r" id="rfQ-YC-Tvd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Dd8-PB-Z1j">
+                    <connections>
+                        <action selector="ImgActnShowPass:" destination="BYZ-38-t0r" id="Juo-lV-kfo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
@@ -95,7 +98,7 @@
             <objects>
                 <viewController id="Q23-W6-3Y7" customClass="Rigistration" customModule="FirstSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lNB-n7-kQl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField toolTip="Придумайте логин для своего аккаунта." opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите новый логин..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYA-NI-Uzv">
@@ -126,14 +129,6 @@
                                 <color key="textColor" red="1" green="0.96862745100000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-jA-6Og">
-                                <rect key="frame" x="125" y="488" width="164" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Зарегестрироваться">
-                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tla-pH-bZR">
                                 <rect key="frame" x="233" y="767" width="161" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,21 +137,31 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BtnActnAuth:" destination="Q23-W6-3Y7" eventType="touchUpInside" id="C2U-Sq-sHr"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пароли не совпадают" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlf-yc-MYb">
-                                <rect key="frame" x="53" y="528" width="175" height="21"/>
+                                <rect key="frame" x="64" y="488" width="175" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZz-jA-6Og">
+                                <rect key="frame" x="125" y="517" width="164" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Зарегестрироваться">
+                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2MV-iq-ww8"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bio-hP-6b7"/>
                     <connections>
-                        <outlet property="BtnPageAuthorization" destination="tla-pH-bZR" id="Hwv-mD-Mbl"/>
                         <outlet property="BtnRegistration" destination="HZz-jA-6Og" id="quz-Lf-02j"/>
                         <outlet property="LblRepeatPassword" destination="Xlf-yc-MYb" id="yE7-Fa-pn2"/>
                         <outlet property="TxbNewLogin" destination="dYA-NI-Uzv" id="NAe-IT-4F6"/>
@@ -166,15 +171,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIN-Sw-RBG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="58"/>
+            <point key="canvasLocation" x="798.55072463768124" y="57.589285714285708"/>
         </scene>
     </scenes>
     <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
