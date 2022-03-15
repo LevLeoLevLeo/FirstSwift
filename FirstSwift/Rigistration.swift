@@ -38,6 +38,23 @@ class Rigistration: UIViewController {
     
     
     
+    @IBAction func BtnPressShowPass(_ sender: UIButton) {
+        TxbNewPassword.isSecureTextEntry = false
+    }
+    
+    @IBAction func BtnPressDragEnterShowPass(_ sender: UIButton) {
+        TxbNewPassword.isSecureTextEntry = false
+    }
+    
+    
+    @IBAction func BtnPressShowPassEnd(_ sender: UIButton) {
+        TxbNewPassword.isSecureTextEntry = true
+    }
+    
+    
+    @IBAction func BtnPressDragExitShowPass(_ sender: UIButton) {
+        TxbNewPassword.isSecureTextEntry = true
+    }
     /*
     // MARK: - Navigation
 

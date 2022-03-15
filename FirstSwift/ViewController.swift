@@ -16,9 +16,8 @@ class ViewController: UIViewController
     @IBOutlet weak var BtnPageRegistration: UIButton!
     @IBOutlet weak var TxbAuthLogin: UITextField!
     @IBOutlet weak var TxbAuthPassword: UITextField!
-    @IBOutlet weak var ImgShowPass: UIImageView!
-    @IBOutlet weak var ImgHiddenPass: UIImageView!
     @IBOutlet weak var BtnShowPass: UIButton!
+    @IBOutlet weak var BtnHidePass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,5 +65,22 @@ class ViewController: UIViewController
         }
     }
     
+    
+    @IBAction func BtnPressShowPass(_ sender: UIButton) {
+        TxbAuthPassword.isSecureTextEntry = false
+    }
+    
+    @IBAction func BtnDragEnterShowPass(_ sender: UIButton) {
+    
+        TxbAuthPassword.isSecureTextEntry = false
+    }
+    
+    @IBAction func BtnPressShowPassEnd(_ sender: UIButton) {
+        TxbAuthPassword.isSecureTextEntry = true
+    }
+    
+    @IBAction func BtnDragExitShowPass(_ sender: UIButton) {
+        TxbAuthPassword.isSecureTextEntry = true
+    }
 }
 

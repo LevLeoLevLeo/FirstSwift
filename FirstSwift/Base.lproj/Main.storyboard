@@ -60,12 +60,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-gx-Dzr">
                                 <rect key="frame" x="287" y="422" width="64" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="eye" catalog="system">
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                <buttonConfiguration key="configuration" style="filled" image="eye.slash" catalog="system">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="BtnDragEnterShowPass:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="IFo-8J-53c"/>
+                                    <action selector="BtnDragExitShowPass:" destination="BYZ-38-t0r" eventType="touchDragExit" id="0aW-8j-Wa4"/>
+                                    <action selector="BtnPressShowPass:" destination="BYZ-38-t0r" eventType="touchDown" id="wKX-HE-lh7"/>
+                                    <action selector="BtnPressShowPassEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aCF-y2-jNz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -74,7 +80,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="kPs-Mj-ppO"/>
                     <connections>
-                        <outlet property="BtnShowPass" destination="Nwu-gx-Dzr" id="17z-sG-dIu"/>
+                        <outlet property="BtnPageRegistration" destination="EYl-Jr-U73" id="UHf-py-wXM"/>
+                        <outlet property="BtnShowPass" destination="Nwu-gx-Dzr" id="eVY-eJ-vTi"/>
                         <outlet property="TxbAuthLogin" destination="aqd-fp-uXz" id="bX8-uA-hXg"/>
                         <outlet property="TxbAuthPassword" destination="VeX-oo-PIb" id="PPA-RQ-bWe"/>
                     </connections>
@@ -156,6 +163,22 @@
                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wg6-Oe-qei">
+                                <rect key="frame" x="287" y="385" width="64" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="eye.slash" catalog="system">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BtnPressDragEnterShowPass:" destination="Q23-W6-3Y7" eventType="touchDragEnter" id="dd6-1p-pEU"/>
+                                    <action selector="BtnPressDragExitShowPass:" destination="Q23-W6-3Y7" eventType="touchDragExit" id="fDu-M6-sUe"/>
+                                    <action selector="BtnPressShowPass:" destination="Q23-W6-3Y7" eventType="touchDown" id="7xF-R3-ilX"/>
+                                    <action selector="BtnPressShowPassEnd:" destination="Q23-W6-3Y7" eventType="touchUpInside" id="DNL-vQ-bp4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2MV-iq-ww8"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -175,13 +198,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="eye" catalog="system" width="128" height="81"/>
+        <image name="eye.slash" catalog="system" width="128" height="86"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
