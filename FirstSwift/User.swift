@@ -6,11 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 class User
 {
-    let Login : String
-    let Password : String
-    var Role = ["Administrator", "User"]
-    init (Login : String, Password : String) {self.Login = Login
-        self.Password = Password}
+    var Login : String = "123"
+    var Password : String = "123"
+    
 }

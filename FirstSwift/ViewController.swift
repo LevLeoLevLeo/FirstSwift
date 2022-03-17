@@ -12,12 +12,11 @@ class ViewController: UIViewController
 
 //Init objects
     
-    //User(Login: <#T##String#>, Password: <#T##String#>)
+    let InfoUser = User()
     @IBOutlet weak var BtnPageRegistration: UIButton!
     @IBOutlet weak var TxbAuthLogin: UITextField!
     @IBOutlet weak var TxbAuthPassword: UITextField!
     @IBOutlet weak var BtnShowPass: UIButton!
-    @IBOutlet weak var BtnHidePass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +46,8 @@ class ViewController: UIViewController
         else
         {
         
-        if (TxbAuthLogin.text == "123" &&
-            TxbAuthPassword.text == "123")
+            if (TxbAuthLogin.text == InfoUser.Login &&
+                TxbAuthPassword.text == InfoUser.Password)
         {
          
             showAlert(name: "Авторизация", desc: "Вы авторизированы!")
