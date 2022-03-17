@@ -31,7 +31,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField toolTip="Введите ваш пароль" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите пароль..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-oo-PIb">
-                                <rect key="frame" x="64" y="422" width="241" height="34"/>
+                                <rect key="frame" x="64" y="422" width="287" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -186,6 +186,7 @@
                     <navigationItem key="navigationItem" id="bio-hP-6b7"/>
                     <connections>
                         <outlet property="BtnRegistration" destination="HZz-jA-6Og" id="quz-Lf-02j"/>
+                        <outlet property="BtnShowPass" destination="Wg6-Oe-qei" id="G49-oc-Z2h"/>
                         <outlet property="LblRepeatPassword" destination="Xlf-yc-MYb" id="yE7-Fa-pn2"/>
                         <outlet property="TxbNewLogin" destination="dYA-NI-Uzv" id="NAe-IT-4F6"/>
                         <outlet property="TxbNewPassword" destination="SKx-1z-DIk" id="iLv-pw-1K9"/>

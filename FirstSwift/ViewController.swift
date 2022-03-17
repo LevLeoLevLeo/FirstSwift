@@ -65,21 +65,24 @@ class ViewController: UIViewController
         }
     }
     
-    
     @IBAction func BtnPressShowPass(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye"), for: .normal)
         TxbAuthPassword.isSecureTextEntry = false
+    
     }
     
     @IBAction func BtnDragEnterShowPass(_ sender: UIButton) {
-    
+        BtnShowPass.setImage(UIImage(systemName: "eye"), for: .normal)
         TxbAuthPassword.isSecureTextEntry = false
     }
     
     @IBAction func BtnPressShowPassEnd(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         TxbAuthPassword.isSecureTextEntry = true
     }
     
     @IBAction func BtnDragExitShowPass(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         TxbAuthPassword.isSecureTextEntry = true
     }
 }

@@ -15,6 +15,7 @@ class Rigistration: UIViewController {
     @IBOutlet weak var BtnRegistration: UIButton!
     @IBOutlet weak var BtnPageAuthorization: UIButton!
     @IBOutlet weak var LblRepeatPassword: UILabel!
+    @IBOutlet weak var BtnShowPass: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,20 +40,24 @@ class Rigistration: UIViewController {
     
     
     @IBAction func BtnPressShowPass(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye"), for: .normal)
         TxbNewPassword.isSecureTextEntry = false
     }
     
     @IBAction func BtnPressDragEnterShowPass(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye"), for: .normal)
         TxbNewPassword.isSecureTextEntry = false
     }
     
     
     @IBAction func BtnPressShowPassEnd(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         TxbNewPassword.isSecureTextEntry = true
     }
     
     
     @IBAction func BtnPressDragExitShowPass(_ sender: UIButton) {
+        BtnShowPass.setImage(UIImage(systemName: "eye.slash"), for: .normal)
         TxbNewPassword.isSecureTextEntry = true
     }
     /*
