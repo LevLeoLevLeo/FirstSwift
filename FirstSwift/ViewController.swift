@@ -50,7 +50,19 @@ class ViewController: UIViewController
                 TxbAuthPassword.text == InfoUser.Password)
         {
          
-            showAlert(name: "Авторизация", desc: "Вы авторизированы!")
+                switch (InfoUser.UserRole)
+                {
+                case "Admin": showAlert(name: "Авторизация", desc: "Вы авторизированы как " + InfoUser.UserRole
+                                        + "(администратор)!")
+                    
+                case "User": showAlert(name: "Авторизация", desc: "Вы авторизированы как " + InfoUser.UserRole
+                                        + "(пользователь)!")
+                    
+                default:
+                    showAlert(name: "Ошибка", desc: "Поизошла ошибка, попробуйте еще раз.")
+                }
+                
+                
             TxbAuthLogin.text?.removeAll()
             TxbAuthPassword.text?.removeAll()
             

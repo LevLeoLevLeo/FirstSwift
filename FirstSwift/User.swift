@@ -11,5 +11,6 @@ class User
 {
     var Login : String = "123"
     var Password : String = "123"
-    
+    var UserRole : String = "Admin"
+    var Role = ["Admin", "User"]
 }

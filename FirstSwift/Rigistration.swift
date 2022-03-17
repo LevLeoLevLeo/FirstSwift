@@ -63,7 +63,7 @@ class Rigistration: UIViewController {
     
     
     @IBAction func BtnRegistrationNewUser_ActnClick(_ sender: UIButton) {
-        
+
     }
     
 }
