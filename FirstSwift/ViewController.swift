@@ -46,14 +46,14 @@ class ViewController: UIViewController
         else
         {
         
+            
             if (TxbAuthLogin.text == InfoUser.Login &&
                 TxbAuthPassword.text == InfoUser.Password)
         {
          
                 switch (InfoUser.UserRole)
                 {
-                case "Admin": showAlert(name: "Авторизация", desc: "Вы авторизированы как " + InfoUser.UserRole
-                                        + "(администратор)!")
+                case "Admin": performSegue(withIdentifier: "1", sender: .none)
                     
                 case "User": showAlert(name: "Авторизация", desc: "Вы авторизированы как " + InfoUser.UserRole
                                         + "(пользователь)!")
